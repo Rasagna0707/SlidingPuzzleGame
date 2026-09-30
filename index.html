@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sliding Puzzle</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="game-shell">
+      <header class="topbar">
+        <h1>Sliding Puzzle</h1>
+      </header>
+
+      <div class="stats">
+        <div class="stat-box">
+          <span class="label">Moves</span>
+          <span id="moves">0</span>
+        </div>
+        <div class="stat-box">
+          <span class="label">Time</span>
+          <span id="timer">00:00</span>
+        </div>
+      </div>
+
+      <div id="board" class="board" aria-label="Sliding puzzle board"></div>
+
+      <div class="controls">
+        <button id="shuffleBtn" type="button">Shuffle</button>
+        <button id="resetBtn" type="button" class="secondary">Reset</button>
+      </div>
+
+      <p id="message" class="message" aria-live="polite">Arrange the tiles in order.</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
